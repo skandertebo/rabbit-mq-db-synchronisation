@@ -75,6 +75,7 @@ async function main() {
         const results = await db.executeQuery(json.query);
         console.log(`Query "${json.query}" executed`);
         console.log(results);
+        channel.ack(msg);
       }
     } catch (err) {
       const disconnected = await new Promise((resolve) => {
