@@ -19,3 +19,10 @@ INSERT INTO sales (date, region, product, qty, cost, amt, tax, total) VALUES ('2
 ('2024-04-02', 'West', 'Pens', 40, 2.19, 87.60, 6.13, 93.73),
 ('2024-04-03', 'East', 'Paper', 21, 12.95, 271.95, 19.04, 290.99),
 ('2024-04-03', 'West', 'Paper', 10, 12.95, 129.50, 9.07, 138.57);
+
+CREATE TABLE migrations (
+    `date` DATE
+);
+
+INSERT INTO sales (date, region, product, qty, cost, amt, tax, total) VALUES ('2024-04-01', 'East', 'Paper', 73, 12.95, 945.35, 66.17, 1011.52), ('2024-05-9', 'West', 'Paper', 33, 12.95, 427.35, 29.91, 457.26)
+INSERT INTO sales (date, region, product, qty, cost, amt, tax, total) VALUES ('2024-04-01', 'East', 'Paper', 73, 12.95, 945.35, 66.17, 1011.52), ('2024-05-10', 'West', 'Paper', 33, 12.95, 427.35, 29.91, 457.26)
